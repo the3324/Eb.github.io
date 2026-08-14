@@ -5885,7 +5885,7 @@ function handleCss(type, css, context, meta) {
     const Atruleregex = /@import\s+(url\s*?\(.{0,9999}?\)|['"].{0,9999}?['"]|.{0,9999}?)($|\s|;)/gm;
     css = (0,_shared_snapshot__rspack_import_1.String)(css);
     css = css.replace(urlRegex, (match, doubleQuotedUrl, singleQuotedUrl, unquotedUrl)=>{
-        const url = doubleQuotedUrl ?? singleQuotedUrl ?? unquotedUrl;
+        const url = doubleQuotedUrl ?? singleQuotedUrl ?? unquotedUrl ?? "";
         const encodedUrl = type === "rewrite" ? (0,_rewriters_url__rspack_import_0.rewriteUrl)(url.trim(), context, meta) : (0,_rewriters_url__rspack_import_0.unrewriteUrl)(url.trim(), context);
         return match.replace(url, encodedUrl);
     });
