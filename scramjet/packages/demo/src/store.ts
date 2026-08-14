@@ -29,7 +29,7 @@ export const demoSettingsStore = createStore(
 );
 
 export function normalizeWispUrl(value: string) {
-	const trimmed = value.trim();
+	const trimmed = (value ?? "").trim();
 	if (!trimmed) {
 		throw new TypeError("Wisp URL is required.");
 	}
@@ -51,7 +51,7 @@ export function normalizeWispUrl(value: string) {
 }
 
 export function normalizeHomeUrl(value: string) {
-	const trimmed = value.trim();
+	const trimmed = (value ?? "").trim();
 	if (!trimmed) {
 		throw new TypeError("Home page URL is required.");
 	}

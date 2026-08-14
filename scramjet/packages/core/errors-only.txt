@@ -1,0 +1,46 @@
+src/client/client.ts(471,18): error TS2339: Property 'name' does not exist on type 'Element'.
+src/client/client.ts(480,20): error TS2339: Property 'name' does not exist on type 'Element'.
+src/client/dom/css.ts(64,9): error TS2769: No overload matches this call.
+src/client/dom/css.ts(103,12): error TS2345: Argument of type 'string' is not assignable to parameter of type 'CSSStyleDeclaration'.
+src/client/dom/document.ts(79,4): error TS2322: Type 'string' is not assignable to type 'never'.
+src/client/dom/element.ts(655,5): error TS2345: Argument of type 'Text' is not assignable to parameter of type 'never'.
+src/client/dom/element.ts(666,5): error TS2345: Argument of type 'Text' is not assignable to parameter of type 'never'.
+src/client/dom/element.ts(677,5): error TS2345: Argument of type 'Text' is not assignable to parameter of type 'never'.
+src/client/dom/element.ts(687,5): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/client/dom/element.ts(695,5): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/client/dom/element.ts(724,34): error TS2345: Argument of type 'Window' is not assignable to parameter of type 'Self'.
+src/client/dom/element.ts(771,33): error TS2551: Property 'contentDocument' does not exist on type 'HTMLIFrameElement | HTMLEmbedElement | HTMLObjectElement'. Did you mean 'ownerDocument'?
+src/client/dom/open.ts(37,32): error TS2345: Argument of type 'Window' is not assignable to parameter of type 'Self'.
+src/client/shared/event.ts(167,4): error TS2322: Type 'Function' is not assignable to type 'EventListenerOrEventListenerObject'.
+src/client/shared/postmessage.ts(21,32): error TS2493: Tuple type '[message: any, options?: WindowPostMessageOptions]' of length '2' has no element at index '2'.
+src/client/shared/postmessage.ts(21,60): error TS2493: Tuple type '[message: any, options?: WindowPostMessageOptions]' of length '2' has no element at index '2'.
+src/client/shared/postmessage.ts(22,27): error TS2493: Tuple type '[message: any, options?: WindowPostMessageOptions]' of length '2' has no element at index '2'.
+src/client/shared/postmessage.ts(25,19): error TS2322: Type 'unknown' is not assignable to type 'object'.
+src/client/shared/requests/websocket.ts(35,3): error TS2554: Expected 1 arguments, but got 0.
+src/client/shared/requests/websocket.ts(36,33): error TS2304: Cannot find name 'WebSocketStream'.
+src/client/shared/requests/websocket.ts(37,3): error TS2554: Expected 1 arguments, but got 0.
+src/client/shared/requests/websocket.ts(37,29): error TS2304: Cannot find name 'WebSocketStream'.
+src/client/shared/requests/websocket.ts(133,9): error TS2769: No overload matches this call.
+src/client/shared/requests/websocket.ts(278,47): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'string | URL'.
+src/client/shared/requests/websocket.ts(282,17): error TS2339: Property 'signal' does not exist on type 'unknown'.
+src/client/shared/requests/websocket.ts(288,5): error TS2322: Type 'unknown' is not assignable to type 'string'.
+src/client/shared/requests/websocket.ts(339,6): error TS2322: Type '(info: any) => void' is not assignable to type 'UnderlyingSinkCloseCallback'.
+src/client/shared/requests/websocket.ts(378,21): error TS2339: Property 'closeCode' does not exist on type 'unknown'.
+src/client/shared/requests/websocket.ts(378,58): error TS2339: Property 'closeCode' does not exist on type 'unknown'.
+src/client/shared/requests/websocket.ts(379,21): error TS2339: Property 'reason' does not exist on type 'unknown'.
+src/client/shared/requests/websocket.ts(379,55): error TS2339: Property 'reason' does not exist on type 'unknown'.
+src/client/shared/requests/websocket.ts(382,34): error TS2339: Property 'closeCode' does not exist on type 'unknown'.
+src/client/shared/requests/websocket.ts(382,57): error TS2339: Property 'reason' does not exist on type 'unknown'.
+src/client/shared/requests/xmlhttprequest.ts(1,10): error TS2305: Module '"@/shared"' has no exported member 'getFlag'.
+src/client/shared/requests/xmlhttprequest.ts(33,16): error TS2339: Property 'getFlag' does not exist on type 'ScramjetClient'.
+src/client/shared/wrap.ts(14,5): error TS2740: Type 'Window' is missing the following properties from type 'typeof globalThis': globalThis, eval, parseInt, parseFloat, and 809 more.
+src/fetch/headers.ts(20,21): error TS2352: Conversion of type 'WeakSet<object> & { readonly [WrappedBrand]: WeakSet<object>; }' to type '_Set<string>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+src/fetch/headers.ts(45,21): error TS2352: Conversion of type 'WeakSet<object> & { readonly [WrappedBrand]: WeakSet<object>; }' to type '_Set<string>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+src/fetch/index.ts(9,15): error TS2305: Module '"./parse"' has no exported member 'ScramjetRequestMode'.
+src/shared/mime.ts(115,27): error TS2345: Argument of type 'string' is not assignable to parameter of type 'object'.
+src/shared/mime.ts(129,44): error TS2345: Argument of type 'string' is not assignable to parameter of type 'object'.
+src/shared/mime.ts(158,47): error TS2345: Argument of type 'string' is not assignable to parameter of type 'object'.
+src/shared/mime.ts(168,33): error TS2345: Argument of type 'string' is not assignable to parameter of type 'object'.
+src/shared/rewriters/js.ts(130,25): error TS2345: Argument of type 'string | Uint8Array<ArrayBufferLike>' is not assignable to parameter of type 'string'.
+src/shared/rewriters/js.ts(131,20): error TS2339: Property 'replace' does not exist on type 'string | Uint8Array<ArrayBufferLike>'.
+src/shared/rewriters/url.ts(112,25): error TS2322: Type 'Uint8Array<ArrayBufferLike>' is not assignable to type 'BlobPart'.

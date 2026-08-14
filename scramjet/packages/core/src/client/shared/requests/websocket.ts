@@ -137,10 +137,10 @@ export default function (client: ScramjetClient, self: GlobalThis) {
 
 			return ws.binaryType;
 		},
-		set(ctx, v: string) {
+		set(ctx, v: BinaryType) {
 			const ws = socketmap.get(ctx.this);
 			if (!ws) return ctx.set(v);
-			if (v === "blob" || v === "arraybuffer") ws.binaryType = v;
+			ws.binaryType = v;
 		},
 	});
 
@@ -254,7 +254,7 @@ export default function (client: ScramjetClient, self: GlobalThis) {
 			const ws = socketmap.get(ctx.this);
 			if (!ws) return;
 
-			ctx.return(ws.barews.send(ctx.args[0]));
+			ws.barews.send(ctx.args[0] as any); ctx.return(undefined);
 		},
 	});
 

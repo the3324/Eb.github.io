@@ -66,7 +66,7 @@ export default function (client: ScramjetClient, self: Self) {
 				// eval("debugger");
 
 				// * origin because obviously
-				if (typeof ctx.args[1] === "string") ctx.args[1] = "*";
+				if (typeof ctx.args[1] === "string") ctx.args[1] = { targetOrigin: "*" };
 				if (typeof ctx.args[1] === "object") ctx.args[1].targetOrigin = "*";
 
 				ctx.return(wrappedPostMessage.call(ctx.fn, ...ctx.args));
